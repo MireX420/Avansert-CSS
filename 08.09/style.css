@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 /*Her stoppet vi i forelesningen*/
 /**/
 *{
@@ -5,7 +6,7 @@
 }
 body{
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header nav h3 {
@@ -15,6 +16,9 @@ header nav h3 {
 header nav ul{
     float:right;
 
+}
+Header nav a:hover{
+    color:blue;
 }
 
 header nav ul li{
@@ -71,6 +75,12 @@ main article{
 
 #breadcrumbs li{
     display: inline-block;    
+}
+#breadcrumbs li::after{
+    content: ">";
+}
+#breadcrumbs li:last-child:after{
+    content: "";
 }
 
 article img{
